@@ -1,0 +1,52 @@
+/* 
+SELECTOR BẰNG THUỘC TÍNH TRONG THẺ
+------------------------------------------
+
+[id]...............: Chọn thẻ có thuộc tính là id
+[id=codej-free]....: chọn thẻ có thuộc tính là id và giá trị là codej-free
+[id$=free].........: CHọn thẻ có kết thúc của thuộc tính bằng chuổi 'free'
+[id|=my]...........: Chọn  thẻ có ký tự bắt đầu bằng chuỗi 'my' ngay sau là dấu -
+[id^=my]...........: Chọn thẻ có ký tự bắt đầu chuỗi 'my'
+[title~=codej].....: Chọn thẻ có title có chứa từ codej
+[id8=codej]........: Chọn thẻ có thuộc tính chứa chuỗi 'codej' trong
+
+tag -> #id -> .class -> []
+
+cách 1
+*/
+/* 
+[id]{
+    border: 2px solid red;
+    padding: 10px 10px;
+} */
+
+
+/* [title]{
+    border: 2px solid red;
+    padding: 10px 10px;
+} */
+
+/* [block-name]{
+    border: 2px solid red;
+    padding: 10px 10px;
+} */
+
+/* Số 2 */
+/* [block-name=codej-free]{
+    border: 2px solid red;
+    padding: 10px 10px;
+} */
+
+/* header[block-name=codej-free]{
+    border: 2px solid red;
+    padding: 10px 10px;
+} */
+
+
+/* số 3 - chú ý: phải đưa ít nhất một kí tự*/
+[block-name$=codej-free]{
+    border: 2px solid red;
+    padding: 10px 10px;
+}
+
+

@@ -1,0 +1,40 @@
+/* định nghĩa các biến */
+:root{
+    /* Tạo biến lưu size 
+        --Tên_biến: giá trị lưu
+    */
+    --text-size-h1  : 100px;
+    --text-size-sup : 30px;
+    --text-size-content : 10px;
+
+    /* Tạo biến lưu màu sắc */
+    --color-h1  : rgb(20, 215, 179);
+}
+
+/* Chon ban ten the */
+
+h1{
+    /* Dùng var thay cho các giá trị trong biến */
+    font-size: var(--text-size-h1);
+    color: var(--color-h1);
+}
+
+sub{
+    font-size: var(--text-size-sup);
+}
+
+/* Chọn thẻ theo ID */
+#content {
+    font-size: 30px;
+}
+
+/* Chọn thẻ theo class */
+.box{
+    width: 500px;
+    height: 50px;
+}
+
+/* Class chữ màu đỏ */
+.text-red{
+    color: red;
+}

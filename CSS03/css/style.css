@@ -1,0 +1,88 @@
+/* header{
+    border: 2px solid red;
+    padding: 10px 10px;
+} */
+
+
+/* 
+
+Các bộ chọn 
+#class-name
+.id-name
+tag-name
+
+
+(1) selector[selector 2][selector3]
+- giống như phép "và" dùng các bộ chọn nối lại với nhau
+- là cái ưu tiên nhất
+
+
+(2)-------
+chọn selector2  nằm trong selector1
+selector1 selectr2
+
+chọn selector 2 nằm trong bậc 1 của selector1
+selector 1 > selector2
+
+chọn selector 2 ngay sau selector1
+selector1 + selector2
+ví dụ như chọn thẻ section sau thẻ nav
+
+chọn selector2 cùng cấp selector1
+selector1 ~ selector2
+- nhưng chỉ chọn từ đó xuống dưới, không phải lên trên
+
+(3)----------------
+selector 1, selector 2
+-> chọn nhiều selector, gộp nhiều selector
+aside, nav{
+    border: 2px solid red;
+    padding: 10px 10px;
+}
+
+
+
+
+*/
+
+/* 
+1
+
+section.section-main#abc{
+    border: 2px solid red;
+    padding: 10px 10px;
+} */
+
+
+/* 
+
+2.1 section.section-main p{
+    border: 2px solid red;
+    padding: 10px 10px;
+} */
+
+
+/* 2.2 section>p{
+    border: 2px solid red;
+    padding: 10px 10px;
+} */
+
+
+/* nav+section{
+    border: 2px solid red;
+    padding: 10px 10px;
+} */
+
+aside, nav{
+    border: 2px solid red;
+    padding: 10px 10px;
+}
+
+
+/* sử dụng nhiều nhất là
+(1) selector[selector 2][selector3]
+selector1 selectr2
+selector1 > selector2
+selector1, selector2
+
+*/
